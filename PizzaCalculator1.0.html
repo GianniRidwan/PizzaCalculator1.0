@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
 
+			/*Gianni Ridwan
+			Pizza Calculator*/
+
+			alert("Welkom bij PizzaHut!");
+			var smallpizza = prompt("Hoeveel small pizza's wilt u? (25 cm)");
+			var mediumpizza = prompt("Hoeveel medium pizza's wilt u? (30 cm)");
+			var largepizza = prompt("Hoeveel large pizza's wilt u? (35 cm)"); //Hier kunnen de gebruikers kiezen hoeveel pizza's ze willen.
+
+			const smallprice = 7.99;
+			const mediumprice = 10.49;
+			const largeprice = 12.49; //Hiermee geef ik de prijs per pizza aan.
+
+			document.write(smallpizza +"x" + " small pizza " + "€"+ smallpizza * smallprice);
+			document.write("<br>");
+			document.write(mediumpizza +"x" + " medium pizza " + "€"+ mediumpizza * mediumprice);
+			document.write("<br>");
+			document.write(largepizza +"x" + " large pizza " + "€"+ largepizza * largeprice); //Hier vermenigvuldigt de pizza's met de prijs per pizza.
+			document.write("<br>");
+			document.write("<br>");//Hiermee zorg ik voor een verspringing van de regels.
+
+			var total_small = smallpizza * smallprice;
+			var total_medium = mediumpizza * mediumprice;
+			var total_large = largepizza * largeprice;
+
+			document.write("Totaal prijs " + "€"+(total_small + total_medium + total_large));
+
+		</script>
+	</body>
+</html>
